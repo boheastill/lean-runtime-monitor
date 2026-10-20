@@ -1,4 +1,11 @@
-import Mathlib
+/-
+Copyright (c) 2026 Baohua Shang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Baohua Shang
+-/
+module
+
+public import Mathlib
 
 /-!
 # A runtime safety monitor, proved over the reals
@@ -22,6 +29,8 @@ We prove, with zero `sorry`:
 5. A refutation: without the monitor the property is false, shown on a
    concrete counterexample.
 -/
+
+public section
 
 namespace Monitor
 
