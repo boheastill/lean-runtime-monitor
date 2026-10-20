@@ -35,7 +35,9 @@ Stated so the theorems are read correctly:
 - the start is safe;
 - the fallback "stay in place" can always be executed. A physical system would brake instead; the braking theorems give the bound such a fallback needs.
 
-Continuous-time trajectories would need a flow invariant on top of this; that is a separate, larger piece of work.
+## What this sample does not cover
+
+Continuous-time trajectories (they need a flow invariant), moving obstacles, and sensor or timing uncertainty. Each of these changes what has to be proved, so I would scope them with you before writing code rather than assume.
 
 ## Build it
 
@@ -68,7 +70,7 @@ LeanMonitor/Monitor.lean definitions, theorems and axiom checks
 
 ## How this was developed
 
-The commit history is the real sequence: project setup, the first version, a lint clean-up, then a round of fixes after review. The review round turned the refutation into a statement about unchecked steps, added the `a > 0` precondition to the braking theorem, made the monitor decide through the threshold switch, and added an axioms check for every theorem.
+The commit history is the real sequence of today's work: project setup, a first version, a lint clean-up, then a refinement pass. The refinement pass made the refutation a statement about unchecked steps, added the `a > 0` precondition to the braking theorem, routed the monitor's decision through the threshold switch, and added an axioms check for every theorem.
 
 ## How I deliver formalization work
 
