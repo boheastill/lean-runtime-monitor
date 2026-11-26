@@ -82,3 +82,7 @@ The commit history is the real sequence of today's work: project setup, a first 
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+---
+
+**Need Lean 4 formalization, mathlib proof engineering, or verified runtime monitors?** Fixed-scope milestones, clean `lake build`, zero `sorry`. Send your theorem statement or safety spec for a straight scoping read → **[hi@boheastill.com](mailto:hi@boheastill.com)** · **[boheastill.com](https://boheastill.com/?r=gh-lean-monitor)**
